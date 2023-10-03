@@ -28,9 +28,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: lightblue;
     -webkit-transition: .4s;
-    transition: .4s;
+    transition: all ease 1s;
   }
   
   .slider:before {
@@ -43,7 +43,7 @@
     background-image: url("../../../../../public/Head/delivery.png");
     background-repeat: no-repeat;
     background-position:center;
-    background-color: white;
+    background-color: #f6f6f6;
     -webkit-transition: .4s;
     transition: .4s;
   }

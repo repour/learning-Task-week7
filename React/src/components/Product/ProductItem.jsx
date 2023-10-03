@@ -8,7 +8,7 @@ const Div = styled.div`
     border-radius: 30px;
     overflow: hidden;
     padding-bottom: 2rem;
-
+    max-width: 400px;
 `
 const Img = styled.img`
     display: block;

@@ -9,16 +9,24 @@ export const AppData = createContext(null)
 function App() {
 
   const [data, setData] = useState([...products])
-  const [filterredData, setFilterredData] = useState([])
+  const [filterredData, setFilterredData] = useState([...products])
   
+  const handleSearch = (searchTerm) => {
+    searchTerm = searchTerm.toLowerCase();
 
+    const result = products.filter((product) => {
+      return product.productName.toLowerCase().includes(searchTerm)
+    })
+
+    setFilterredData(result)
+  }
 
   return (
     <>
       <AppData.Provider value={{
         productList: data,
         filterredProductList: filterredData,
-
+        handleSearch:handleSearch
       }}>
 
       <Switch>
@@ -26,7 +34,7 @@ function App() {
           <Home />
         </Route>
         <Route path= "/search" exact>
-          <ProductSearchPage />
+          <ProductSearchPage onSearch={handleSearch} productList={filterredData} />
         </Route>
       </Switch>
       </AppData.Provider>
