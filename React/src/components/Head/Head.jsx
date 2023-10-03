@@ -18,7 +18,9 @@ const Head = () => {
 
   return (
     <FlexCon>
-      <img src="./Head/logo.png" alt="" />
+      <Link to="/" >
+        <img src="./Head/logo.png" alt="" />
+      </Link>
       <HeadList>
         <HeadItem >
           <StyledLink to="/" >Home</StyledLink>
