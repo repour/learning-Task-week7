@@ -43,7 +43,7 @@ const Product = () => {
         })
       }
       </ProCon>
-      <Link to="/search" style={{ textDecoration: 'none' }}>
+      <Link to="/newProduct" style={{ textDecoration: 'none' }}>
         <ProButton>See More Product <ProButImg src="./Products/Vector.svg" alt="arrow" /></ProButton>
       </Link>
     </Con>

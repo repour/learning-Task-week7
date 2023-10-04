@@ -19,6 +19,7 @@ const Img = styled.img`
     display: block;
     margin: auto;
     width: 115%;
+    max-width: 210px;
     position: relative;
     top: -4rem;
     left: -0.75rem;
@@ -29,6 +30,8 @@ const PosDiv = styled.div`
 `
 const ArrowImg = styled.img`
     width: 20%;
+    max-width: 38px;
+
 `
 const ArrowDiv = styled.div`
     display:flex ;

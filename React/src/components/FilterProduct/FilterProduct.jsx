@@ -3,6 +3,7 @@ import { AppData } from '../../App';
 import { Container, OrangeP, ProButImg, ProButton, TitleH2 } from '../../css-components/css-components';
 import styled from 'styled-components';
 import ProductItem from '../Product/ProductItem';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Con = styled(Container)`
   margin: 4rem auto;
@@ -36,7 +37,9 @@ console.log(productItem);
         })
       }
       </ProCon>
-      <ProButton>See More Product <ProButImg src="./Products/Vector.svg" alt="arrow" /></ProButton>
+      <Link to="/newProduct" style={{ textDecoration: 'none' }}>
+        <ProButton>See More Product <ProButImg src="./Products/Vector.svg" alt="arrow" /></ProButton>
+      </Link>
     </Con>
   )
 }

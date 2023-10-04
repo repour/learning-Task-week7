@@ -4,6 +4,7 @@ import Home from './components/Home/Home'
 import ProductSearchPage from './components/ProductSearchPage/ProductSearchPage'
 import { BrowserRouter as Switch, Link, Route } from 'react-router-dom';
 import products from './products'
+import ProductDataForm from './components/Product/ProductDataForm';
 
 export const AppData = createContext(null)
 function App() {
@@ -21,12 +22,20 @@ function App() {
     setFilterredData(result)
   }
 
+  const onCreateNewProduct = (formData) => {
+    setData({
+      ...data,
+      formData
+    })
+  }
+
   return (
     <>
       <AppData.Provider value={{
         productList: data,
         filterredProductList: filterredData,
-        handleSearch:handleSearch
+        handleSearch:handleSearch,
+        onCreateNewProduct:onCreateNewProduct
       }}>
 
       <Switch>
@@ -35,6 +44,9 @@ function App() {
         </Route>
         <Route path= "/search" exact>
           <ProductSearchPage onSearch={handleSearch} productList={filterredData} />
+        </Route>
+        <Route path= "/newProduct" exact>
+          <ProductDataForm onCreateNewProduct={onCreateNewProduct}/>
         </Route>
       </Switch>
       </AppData.Provider>
