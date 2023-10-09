@@ -2,7 +2,7 @@ import { createContext, useState } from 'react'
 import './App.css'
 import Home from './components/Home/Home'
 import ProductSearchPage from './components/ProductSearchPage/ProductSearchPage'
-import { BrowserRouter as Switch, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Switch, Route } from 'react-router-dom';
 import products from './products'
 import ProductDataForm from './components/Product/ProductDataForm';
 

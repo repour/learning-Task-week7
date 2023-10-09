@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { AppData } from '../../App';
 import { Container, OrangeP, ProButImg, ProButton, TitleH2 } from '../../css-components/css-components';
 import styled from 'styled-components';

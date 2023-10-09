@@ -1,4 +1,3 @@
-import React from 'react'
 import { FlexCon, HeadList, HeadItem } from '../../css-components/css-components'
 import SearchBar from './SearchBar/SearchBar.jsx'
 import styled from 'styled-components'

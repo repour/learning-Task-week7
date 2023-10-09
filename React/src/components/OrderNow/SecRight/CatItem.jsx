@@ -1,12 +1,11 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { FlexCon, P500 } from '../../../css-components/css-components'
+import { P500 } from '../../../css-components/css-components'
 
 
 const Div = styled.div`
     margin: auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     background: white;
     background-size: 100% 70% ;
     background-position: center;

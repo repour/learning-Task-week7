@@ -1,5 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import Head from '../Head/Head'
 import OrderNow from '../OrderNow/OrderNow'
 import Product from '../Product/Product'
@@ -9,7 +7,7 @@ import Testimonials from '../Testimonials/Testimonials'
 import Subscribe from '../Subscribe/Subscribe'
 import Footer from '../Footer/Footer'
 
-const Home = props => {
+const Home = () => {
   return (
     <>
     <Head />
@@ -24,6 +22,5 @@ const Home = props => {
   )
 }
 
-Home.propTypes = {}
 
 export default Home

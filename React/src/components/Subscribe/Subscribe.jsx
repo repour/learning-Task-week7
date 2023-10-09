@@ -1,4 +1,3 @@
-import React from 'react'
 import { FlexCon, P500, ProButton, TitleH2 } from '../../css-components/css-components'
 import styled from 'styled-components'
 
@@ -29,14 +28,13 @@ const InputDiv = styled.div`
   border-radius: 15px;
   background-color: white;
 `
-const Input = styled.input`
+const InputA = styled.input`
   background-color: white;
   border: none;
   padding: 1rem 0;
   width: 12rem;
   &::placeholder{
     color: #B6B6B6;
-    font-size: 16rem;
     font-weight: 500;
     padding: 1rem;
   }
@@ -54,7 +52,7 @@ const Subscribe = () => {
         <H>Subcribe To Our Newsletter</H>
         <P>Lorem ipsum dolor sit amet, consectetur adipidrscing elit. Purus mauris sem sed urna venenatis vivamus. Egestas in velit nulla viverra turpis id ac. Amet faucibus tempus.</P>
         <InputDiv>
-        <Input type="text" placeholder='Type your email.....'/>
+        <InputA type="text" placeholder='Type your email.....'/>
         <Button>SUBCRIBE</Button>
         </InputDiv>
       </div>
